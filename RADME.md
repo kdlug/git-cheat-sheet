@@ -1,6 +1,6 @@
 # Git Cheat Sheet
 
-## Change the author and name in existing commits
+## Changing the author and name in existing commits
 
 Change the name and/or email address in existing commits. It rewrite the entire history of your Git repository.
 
@@ -22,3 +22,11 @@ then
 fi
 ' --tag-name-filter cat -- --branches --tags
 ```
+## Removing sensitive data from git repository
+
+```console
+git filter-branch --force --index-filter \
+  'git rm -r --cached --ignore-unmatch "$PATH_TO_SENSITIVE_DATA"' \
+  --prune-empty --tag-name-filter cat -- --all
+```
+
