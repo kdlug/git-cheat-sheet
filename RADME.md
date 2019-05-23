@@ -30,3 +30,16 @@ git filter-branch --force --index-filter \
   --prune-empty --tag-name-filter cat -- --all
 ```
 
+## Creating branch from given commit
+
+Creating a branch
+
+```console
+git branch <branch-name> <sha1-of-commit>
+```
+
+Creating a switching to the branch
+
+```console
+git checkout -b <branch-name> <sha1-of-commit>
+```
