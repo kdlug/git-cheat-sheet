@@ -1,5 +1,21 @@
 # Git Cheat Sheet
 
+## Configuration
+
+### GLobal
+
+```console
+git config --global user.name "Name Surname"
+git config --global user.email "name.surname@example.com"
+```
+
+### For specific project
+
+```console
+git config user.name "Name Surname"
+git config user.email "name.surname@example.com"
+```
+
 ## Changing the author and name in existing commits
 
 Change the name and/or email address in existing commits. It rewrite the entire history of your Git repository.
