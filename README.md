@@ -16,6 +16,18 @@ git config user.name "Name Surname"
 git config user.email "name.surname@example.com"
 ```
 
+## Changing remote url
+
+```console
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+```
+
+Verify that the remote URL has changed.
+
+```
+git remote -v
+```
+
 ## Changing the author and name in existing commits
 
 Change the name and/or email address in existing commits. It rewrite the entire history of your Git repository.
