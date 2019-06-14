@@ -2,7 +2,7 @@
 
 ## Configuration
 
-### GLobal
+### Global
 
 ```console
 git config --global user.name "Name Surname"
@@ -70,4 +70,12 @@ Creating a switching to the branch
 
 ```console
 git checkout -b <branch-name> <sha1-of-commit>
+```
+
+# Stash untracked files
+
+```console
+git add . # or specific file list
+git stash --include-untracked # stash files
+git stash pop # unstash files
 ```
