@@ -28,6 +28,12 @@ Verify that the remote URL has changed.
 git remote -v
 ```
 
+## Changing the author of last commit to current settings
+
+```console
+git commit --amend --reset-author --no-edit
+```
+
 ## Changing the author and name in existing commits
 
 Change the name and/or email address in existing commits. It rewrite the entire history of your Git repository.
